@@ -1,0 +1,15 @@
+{
+"rewrites": [
+    {
+      "source": "/",
+      "destination": "/catalogo.html"
+    },
+    {
+      "source": "/index.html",
+      "destination": "/catalogo.html"
+    }
+  ],
+  "errorFiles": [
+    "catalogo.html"
+  ]
+}
