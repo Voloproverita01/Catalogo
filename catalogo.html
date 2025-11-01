@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos - Tecnología y Accesorios</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; 
+        }
+        /* Clase para el color primario del logo */
+        .text-korenobyte-primary { color: #0056B3; } /* Azul oscuro para precios y texto */
+        .border-korenobyte-accent { border-color: #00C3E3; } /* Cian para líneas divisorias */
+
+        /* Estilos de Botón con el azul del logo */
+        .btn-korenobyte {
+            background-color: #007BFF; /* Azul Brillante */
+            transition: background-color 0.15s ease-in-out;
+        }
+        .btn-korenobyte:hover {
+            background-color: #0056B3; /* Azul Oscuro en hover */
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover;
+            border-top-left-radius: 0.75rem;
+            border-top-right-radius: 0.75rem;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <header class="text-center mb-12">
+        
+        <div class="mb-6">
+            <!-- URL de Imgur con logo transparente -->
+            <img src="https://i.imgur.com/c0e0e0s.png" alt="Logo de KorenoByte" class="mx-auto w-48 h-auto object-contain">
+        </div>
+        
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2">
+            Catálogo Oficial de Productos de Tecnología
+        </h1>
+        <p class="text-xl text-gray-600">
+            Descubre nuestra selección de gadgets, accesorios de carga y moda.
+        </p>
+        <div class="mt-4 flex justify-center space-x-4">
+            <!-- Enlaces con color primario -->
+            <a href="#electronica-gadgets" class="text-sm font-medium hover:underline" style="color: #007BFF;">Electrónica y Gadgets</a>
+            <a href="#accesorios-moda" class="text-sm font-medium hover:underline" style="color: #007BFF;">Accesorios y Moda</a>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto">
+        
+        <section id="electronica-gadgets" class="mb-16">
+            <!-- Línea divisoria con color de acento cian -->
+            <h2 class="text-3xl font-bold text-gray-800 border-b-2 pb-2 mb-8 border-korenobyte-accent">
+                Electrónica y Gadgets
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                
+                <!-- NUEVO PRODUCTO AÑADIDO: Audífonos KZ EDA -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/6DTe7eB.jpeg" alt="Audífonos KZ EDA" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Audífonos KZ EDA (3 Firmas de Sonido)</h3>
+                        <!-- Precio con color azul oscuro -->
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Set Hi-Fi de 3 auriculares con sonidos personalizados: Heavy Bass (graves), Balanced y High Treble (agudos). Recibe tres experiencias musicales distintas.
+                        </p>
+                        <!-- Botón con estilos de KorenoByte -->
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/Kmto1jS.jpeg" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Audífonos Acer True Wireless</h3>
+                        <!-- Precio con color azul oscuro -->
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Sonido nítido y equilibrado (graves profundos y agudos claros). Bluetooth 5.0/5.1 y hasta 24 horas de autonomía.
+                        </p>
+                        <!-- Botón con estilos de KorenoByte -->
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/EC4K6VI.jpeg" alt="Smartwatch Paazomu (AMOLED Curva)" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Smartwatch Paazomu (AMOLED Curva)</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Elegante, resistente al agua y con batería de larga duración. Pantalla curva AMOLED HD para mantenerte conectado con estilo.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/Q0xImtP.jpeg" alt="Audífonos AOC ACT2521" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Audífonos AOC ACT2521</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Control táctil inteligente y diseño ergonómico y liviano. Perfectos para trabajo, estudio o entrenamiento sin interrupciones.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/MtI6JHz.jpeg" alt="Altavoz de Resonancia Inalámbrica" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Altavoz de Resonancia Inalámbrica</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Transforma cualquier superficie en un altavoz potente. Conexión sin cables, diseño compacto y sonido claro y envolvente.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/vn7t4NM.jpeg" alt="Reloj Inteligente Profesional" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Reloj Inteligente Profesional</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Diseño profesional y estilo activo con acabado metálico elegante, llamadas inalámbricas y más de 100 modos de ejercicio.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/r6pUJYt.jpeg" alt="Smartwatch ENBONO (1000 mAh)" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Smartwatch ENBONO (1000 mAh)</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Batería de larga duración (1000 mAh), pantalla HD de 1.46″ y funciones inteligentes avanzadas, ideal para estilo de vida activo.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/MFehh0a.jpeg" alt="Auriculares Gaming/Deportivos Inalámbricos" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Auriculares Gaming/Deportivos</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Cancelación de ruido activa, sonido estéreo de alta calidad y diseño dinámico con pantalla LED. Conectividad Bluetooth 5.0.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/zDdxziR.jpeg" alt="Memoria USB‑C 2 en 1 (128 GB)" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Memoria USB‑C 2 en 1 (128 GB)</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Doble interfaz (USB‑C + USB estándar). 128 GB de alta capacidad para transportar gran volumen de datos con diseño resistente.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/X25Bsrf.jpeg" alt="Mando Gamesir Nova Lite Anti-Drift" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Mando Gamesir Nova Lite Anti-Drift</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Mando anti-drift con 3 tipos de conexión. Sticks Hall Effect para mayor precisión sin perder estabilidad en juegos FPS.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/rLIRFer.jpeg" alt="Cargador Rápido USB 40W" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Cargador Rápido USB 40W</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Potente cargador de 40W. Incluye cable tipo flexómetro Tipo C para una carga rápida, segura y cómoda en cualquier lugar.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/0rAtTBp.jpeg" alt="HUB USB de Carga Rápida 65W" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">HUB USB de Carga Rápida 65W</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Potencia real de 65W, con 3 puertos USB y 1 Tipo-C. Carga múltiple y veloz, con diseño funcional y soporte integrado.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/q095lE3.jpeg" alt="Cable trenzado para gaming de 120W" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Cable Trenzado Gaming 120W (1m)</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Cable USB a Tipo C compatible con carga rápida turbo 67W/33W. Material trenzado para máxima durabilidad.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/gb2kKRo.jpeg" alt="Cable de silicona liquida ultra rapido" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Cable de Silicona Líquida PD 100W</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Cable USB C de carga rápida PD 100W. 5A. Material de silicona líquida y funcional para transmisión de datos (1 metro).
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/gtSdWUT.jpeg" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Cable USB Rotable 180° (120W)</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Cable Tipo C de 120W con diseño rotable 180° para mayor durabilidad. Adaptable a la carga que soporte tu celular.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/mudxKiA.jpeg" alt="Cable USB-C 4 en 1 carga rapida PD" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Cable USB-C 4 en 1 Carga Rápida PD</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Cable de silicona con versatilidad 4 en 1, compatible con celulares iPhone y Androids con soporte de carga rápida PD.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/0SENWOR.jpeg" alt="Puente USB 8 en 1 (Hub)" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Puente USB 8 en 1 (Hub)</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Hub multipuerto de alta velocidad con 4 puertos USB-A y carga rápida de 25W. Ideal para computadoras y portátiles.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="accesorios-moda" class="mb-16">
+            <!-- Línea divisoria con color de acento cian -->
+            <h2 class="text-3xl font-bold text-gray-800 border-b-2 pb-2 mb-8 border-korenobyte-accent">
+                Accesorios y Moda
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/GN0KDbd.jpeg" alt="Reloj Clásico de Cuarzo" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Reloj Clásico de Cuarzo</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Movimiento de cuarzo para precisión confiable. Diseño versátil casual-elegante, ideal para el día a día o como regalo.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/kVIlcJJ.jpeg" alt="Set de Regalo: Reloj + Accesorios" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Set de Regalo: Reloj + Accesorios</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Reloj de cuarzo con esfera redonda y correa de cuero sintético de alta calidad. Perfecto como regalo elegante para hombre.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <img src="https://i.imgur.com/bduj3uU.jpeg" alt="Gorra Estilo Militar Estadounidense" class="product-image">
+                    <div class="p-5">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Gorra Estilo Militar Estadounidense</h3>
+                        <p class="text-2xl font-bold mb-3 text-korenobyte-primary">Consultar</p>
+                        <p class="text-gray-500 text-sm mb-4">
+                            Gorra nueva estilo militar Estadounidense. Un accesorio de moda casual y resistente.
+                        </p>
+                        <button class="w-full text-white py-2 rounded-lg font-medium btn-korenobyte">
+                            Ver Detalles
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="text-center p-8 rounded-xl shadow-inner" style="background-color: #E0F7FA;">
+            <h3 class="text-2xl font-bold mb-4" style="color: #004D40;">¿Listo para ordenar?</h3>
+            <p class="text-gray-700 mb-4">
+                Contáctanos para realizar tu pedido o resolver cualquier duda sobre nuestros productos.
+            </p>
+            <a href="Mw3.eg19@gmail.com" class="inline-block text-white py-3 px-6 rounded-full font-semibold shadow-md btn-korenobyte">
+                Enviar Correo Electrónico
+            </a>
+            <p class="text-sm text-gray-500 mt-4">Teléfono: +593 96 134 5905</p>
+        </section>
+
+    </main>
+
+    <footer class="text-center mt-12 text-gray-500 text-sm">
+        <p>&copy; 2025 Catálogo de Tecnología y Accesorios. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
