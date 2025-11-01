@@ -7,6 +7,20 @@
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- SOLUCIÓN VERCEL/GITHUB: Redirige automáticamente la ruta base (/) a catalogo.html -->
+    <!-- Si subiste el repositorio completo, este código fuerza la carga de catalogo.html -->
+    <script>
+        // Obtiene la ruta actual (pathname)
+        const currentPath = window.location.pathname;
+
+        // Comprueba si la ruta es la raíz ("/") y no incluye el nombre del archivo
+        if (currentPath === '/' || currentPath === '/index.html') {
+            // Redirige al archivo catalogo.html
+            window.location.pathname = '/catalogo.html';
+        }
+    </script>
+    
     <style>
         body {
             font-family: 'Inter', sans-serif;
